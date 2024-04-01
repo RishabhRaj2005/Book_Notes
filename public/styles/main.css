@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #6eabe7;
+    color: #343a40;
+    background: radial-gradient(#b1ddf1 15%, rgba(0,0,0,0) 16%), radial-gradient(#000000 15%, rgba(0,0,0,0) 16%), #fc0;
+    background-position: 0 0, 30px 30px;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-size: 60px 60px;
+}
+.box{
+    width: 80%;
+    margin: auto;
+}
+
+.bookForm{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.addNewBook,.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255,196,126,0.85);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 140px;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    border-radius: 9px;
+    width: 58px;
+    height: 31px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(237, 214, 4);
+}
+
+button :hover{
+    filter: brightness(83%);
+}
+
+h1{
+    text-align: center;
+}
+.book{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.abook{
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    background-color: rgba(255,227,130,0.85);
+}
+
+.book-image{
+    display: flex;
+    padding: 10px;
+}
+
+.cover{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-info{
+    flex: 1;
+    padding: 10px;
+}
+h2{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

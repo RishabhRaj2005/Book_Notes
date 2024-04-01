@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit BookNotes</title>
+    <link rel="stylesheet" href="/styles/edit.css">
+</head>
+<body>
+    <div class="box">
+        <form class="edit-book" action="/update" method="post" >
+            <input class="input-type" type="hidden" name="isbn" value="<%= bookToEdit.isbn %>">
+            <label for="updatedTitle">Title: </label>
+            <input class="input-type" type="text" name="updatedTitle" placeholder="Title" value="<%= bookToEdit.title %>">
+            <label for="updatedIsbn">Book ISBN: </label>
+            <input class="input-type" type="text" name="updatedIsbn" placeholder="ISBN" value="<%= bookToEdit.isbn %>" readonly>
+            <label for="updatedDescription">Description : </label>
+            <input class="input-type" type="text" name="updatedDescription" placeholder="Description" value="<%= bookToEdit.description %>">
+            <label for="updatedRating">Rating: </label>
+            <input class="input-type" type="text" name="updatedRating" placeholder="Rating" value="<%= bookToEdit.rating %>">
+            <button class="update-btn" type="submit" name="update">Update</button>
+        </form> 
+    </div>
+</body>
+</html>
